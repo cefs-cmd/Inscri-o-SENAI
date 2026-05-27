@@ -85,27 +85,33 @@ button{
 }
 
 button[type="reset"]{
-    background-color: green;
+    background-color: red;
     color: white;
 }
 
 button[type="submit"]{
-    background-color: red;
+    background-color: green;
     color: white;
 }
 
 button:hover{
     opacity: 0.9;
 }
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
 </style>
 </head>
 
 <body>
 
-<form>
-<a href="C:\Users\aluno.areias\Downloads\images"
+<!-- O FORMULÁRIO VAI PARA A PÁGINA agradecimento.html -->
+<form action="agradecimento.html">
 
-<h3 style="color: black;">Inscrição SENAI</h3>
+<h3>Inscrição SENAI</h3>
 
 <label>Nome Completo:</label>
 <input type="text" required>
@@ -128,8 +134,6 @@ pattern="[0-9]{9}"
 placeholder="Somente números"
 required>
 
-<!-- SELECTS -->
-
 <label>Curso Desejado:</label>
 <select required>
     <option value="">Selecione</option>
@@ -138,8 +142,6 @@ required>
     <option>Gestão e Segurança</option>
     <option>ADS (Análise e Desenvolvimento de Sistemas)</option>
 </select>
-
-<!-- ENDEREÇO -->
 
 <label>Número:</label>
 <input type="text" required>
@@ -178,8 +180,6 @@ pattern="[0-9]{8}"
 placeholder="Somente números"
 required>
 
-<!-- CONTATO -->
-
 <label>Número de Telefone:</label>
 <input type="text"
 pattern="[0-9]{11}"
@@ -194,8 +194,6 @@ required>
 
 <label>LinkedIn:</label>
 <input type="url" required>
-
-<!-- OPCIONAIS -->
 
 <label>Você possui CNH?</label>
 
@@ -235,9 +233,12 @@ required>
 <label>Observações:</label>
 <textarea rows="5" required></textarea>
 
-<button type="reset">Enviar Inscrição</button>
-<button type="submit">Limpar Cadastro</button><br><br>
-<a href="meusenai.com">já sou aluno!</a>
+<button type="submit">Enviar Inscrição</button>
+<button type="reset">Limpar Cadastro</button>
+
+<br><br>
+
+<a href="https://www.senai.br/">Já sou aluno!</a>
 
 </form>
 
